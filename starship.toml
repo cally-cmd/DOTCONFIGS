@@ -1,0 +1,56 @@
+# ~/.config/starship.toml
+
+add_newline = false
+
+format = """
+$os\
+$username\
+$directory\
+$fill\
+$python\
+$rust\
+$lua\
+$haskell\
+$cmd_duration
+$character
+"""
+
+[character]
+success_symbol = '[>](bold purple)'
+error_symbol = '[✗](bold red) '
+
+[cmd_duration]
+format = "[$duration]($style)"
+style = "yellow"
+
+[directory]
+format = "[ $path ]($style)"
+style = "#4a7c47 bg:#fca17d"
+truncation_symbol = '…/'
+
+[fill]
+symbol = ' '
+
+[haskell]
+format = "[$symbol]($style)"
+detect_extensions = ['hs', 'lhs', 'cabal', 'hs-boot']
+
+[lua]
+format = "[$symbol]($style)"
+symbol = " "
+
+[os]
+style = "bg:#9a348e"
+disabled = false
+
+[python]
+format = "[$symbol]($style)"
+style = "bold yellow"
+
+[rust]
+format = "[$symbol]($style)"
+
+[username]
+format = "[ $user ]($style)"
+style_user = "bg:#da627d"
+show_always = true
