@@ -33,6 +33,7 @@ symbol = ' '
 
 [haskell]
 format = "[$symbol]($style)"
+symbol = " "
 detect_extensions = ['hs', 'lhs', 'cabal', 'hs-boot']
 
 [lua]
@@ -40,15 +41,21 @@ format = "[$symbol]($style)"
 symbol = " "
 
 [os]
+format = "[ $symbol ]($style)"
 style = "bg:#9a348e"
 disabled = false
+
+[os.symbols]
+Debian = " "
 
 [python]
 format = "[$symbol]($style)"
 style = "bold yellow"
+symbol = " "
 
 [rust]
 format = "[$symbol]($style)"
+symbol = " "
 
 [username]
 format = "[ $user ]($style)"
